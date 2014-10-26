@@ -1,0 +1,71 @@
+body {
+			background: #add7fb;
+			font-family: sans-serif;
+		}
+body.dinoGame {
+	/*background: #b7e8d0;*/
+}
+body.colorGame {
+	/*background: #f7e8d7;*/
+}
+		.header {
+			width: 500px;
+			margin: 20px auto;
+		}
+		.header h1 {
+			color: white;
+			text-shadow: 1px 1px 3px #000;
+			margin-left: -20px;
+		}
+		h2 {
+			margin: 0 20px;
+		}
+		#container {
+			width: 500px;
+			margin: 0 auto;
+			background: white;
+			padding: 20px;
+		}
+		button.newGame {
+			border: 0;
+			padding: 10px 20px;
+			background: #578ae8;
+			color: white;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		#playfield {
+			display: none;
+			width: 500px;
+			margin: 0 auto;
+			padding: 10px 0;
+			position: relative;
+			-webkit-perspective: 2000px;
+			background: white;
+			align-items: center;
+			justify-content: center;
+			flex-direction: row;
+			flex-wrap: wrap;
+			flex-flow: row wrap;
+			align-content: flex-end;
+		}
+		.tile {
+			margin: 10px;
+			width: 100px;
+			height: 100px;
+			-webkit-transform: rotateY(0deg);
+			-webkit-transition-duration: 700ms;
+		}
+		.isFlipped {
+			-webkit-transform: rotateY(-180deg);
+			-webkit-transition-duration: 700ms;
+		}
+		.clear:before,
+		.clear:after {
+		    content: " ";
+		    display: table;
+		}
+
+		.clear:after {
+		    clear: both;
+		}

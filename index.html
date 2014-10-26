@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Memory game</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/gameLogic.js"></script>
+</head>
+<body>
+	<div class="header">
+		<h1>Benji's memory game</h1>
+	</div>
+	<div id="container">
+		<div id="playfield" class="clear"></div>
+		<audio src="audio/hit.wav" id="hit" preload="auto"></audio>
+		<audio src="audio/loose.wav" id="loose" preload="auto"></audio>
+		<audio src="audio/match.wav" id="match" preload="auto"></audio>
+		<audio src="audio/win.wav" id="win" preload="auto"></audio>
+	</div>
+	<script src="js/init.js"></script>
+	<script src="js/colors.js"></script>
+	<script src="js/dinos.js"></script>
+</body>
+</html>
